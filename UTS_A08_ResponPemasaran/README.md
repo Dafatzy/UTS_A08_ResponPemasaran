@@ -4,6 +4,11 @@
 Paket ini berisi laporan DOCX/PDF lima BAB, notebook eksperimen yang menyimpan output eksekusi, CSV `bank-full.csv`, artefak EDA/evaluasi, arsip output, dokumentasi, dan checklist. Angka pada laporan dapat ditelusuri ke file CSV dalam `outputs/`.
 
 **Catatan data:** file yang disertakan berukuran 4.610.348 byte, berbentuk 45.211 × 17, dan SHA-256-nya cocok dengan checksum pada data card publik pihak ketiga yang merekam pengambilan melalui HTTPS dari arsip UCI. Ini merupakan verifikasi silang sekunder, bukan checksum resmi UCI. Detail lengkap ada di `VERIFIKASI_DATASET.md` dan `data/raw/dataset_provenance.json`.
+## A08 ResponPemesanan
+anggota Kelompok:
+- M.Alief Mufthi – 231111319 
+- Dafa Aditya Nazwan Priyadi – 231111548 
+- M.Sendy Aulia – 231111455
 
 ## Isi paket
 - `Laporan_Milestone1_Bank_Marketing_A08.docx` — laporan editable, lima BAB.
