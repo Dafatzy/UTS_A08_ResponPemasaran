@@ -1,0 +1,10 @@
+indikator,nilai
+jumlah_baris,45211
+jumlah_kolom_termasuk_target,17
+jumlah_prediktor,16
+baris_duplikat_penuh,0
+sel_missing_total,0
+jumlah_label_unknown_total,52124
+jumlah_pdays_minus1,36954
+jumlah_pdays_di_bawah_minus1,0
+jumlah_pdays_non_numerik,0

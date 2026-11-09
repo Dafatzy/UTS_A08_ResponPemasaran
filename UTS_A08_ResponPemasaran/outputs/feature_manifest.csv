@@ -1,0 +1,13 @@
+feature,dtype,group
+age,int64,numeric
+job,object,categorical
+marital,object,categorical
+education,object,categorical
+default,object,categorical
+balance,int64,numeric
+housing,object,categorical
+loan,object,categorical
+previous,int64,numeric
+poutcome,object,categorical
+previously_contacted,object,categorical
+days_since_previous_contact,float64,numeric

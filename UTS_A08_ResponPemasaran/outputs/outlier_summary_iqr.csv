@@ -1,0 +1,8 @@
+fitur,q1,q3,iqr,batas_bawah_iqr,batas_atas_iqr,jumlah_potensi_outlier,catatan
+age,33.0,48.0,15.0,10.5,70.5,487,Screening IQR; tidak dihapus otomatis
+balance,72.0,1428.0,1356.0,-1962.0,3462.0,4729,Screening IQR; tidak dihapus otomatis
+day,8.0,21.0,13.0,-11.5,40.5,0,Screening IQR; tidak dihapus otomatis
+duration,103.0,319.0,216.0,-221.0,643.0,3235,Screening IQR; tidak dihapus otomatis
+campaign,1.0,3.0,2.0,-2.0,6.0,3064,Screening IQR; tidak dihapus otomatis
+pdays,133.0,327.0,194.0,-158.0,618.0,49,Screening IQR; tidak dihapus otomatis; nilai sentinel -1 dikeluarkan dari screening
+previous,0.0,0.0,0.0,0.0,0.0,8257,Screening IQR; tidak dihapus otomatis

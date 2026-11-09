@@ -1,0 +1,39 @@
+{
+  "dataset": "UCI Bank Marketing - bank-full.csv",
+  "dataset_id": 222,
+  "dataset_version": "legacy full bank-full.csv",
+  "source_page": "https://archive.ics.uci.edu/dataset/222/bank+marketing",
+  "source_archive": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+  "source_method": "CSV provided by the user after following the UCI download instructions; file SHA-256 matches a secondary public data-source card that records an official HTTPS UCI acquisition. The UCI archive ZIP itself was not retained in this run.",
+  "source_zip_sha256": null,
+  "csv_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+  "csv_size_bytes": 4610348,
+  "actual_shape": [
+    45211,
+    17
+  ],
+  "expected_shape_for_selected_version": [
+    45211,
+    17
+  ],
+  "target_distribution": {
+    "no": 39922,
+    "yes": 5289
+  },
+  "delimiter": ";",
+  "target_column": "y",
+  "target_mapping": {
+    "no": 0,
+    "yes": 1
+  },
+  "origin_authentication": {
+    "status": "secondary_checksum_corroboration",
+    "detail": "SHA-256 equals the checksum published in the cited third-party data card, which records a prior official HTTPS download from UCI. This is secondary corroboration, not a checksum issued or signed by UCI.",
+    "secondary_record": "https://github.com/raederhans/ca6003-bankmarketing/blob/main/notes/data_card.md",
+    "secondary_recorded_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+    "official_uci_archive_sha256_retained": false
+  },
+  "dataset_version_validation": "passed exact 45,211-row and 17-column bank-full.csv schema check",
+  "validated_at_utc": "2026-11-08T00:00:00+00:00",
+  "note": "No data values were edited. The exact original uploaded CSV bytes are stored to keep the SHA-256 consistent with this provenance record and the experiment run metadata."
+}

@@ -1,0 +1,3 @@
+variant,validation_method,cv_average_precision_mean,cv_average_precision_std,cv_f1_yes_mean,test_average_precision,test_f1_yes,status
+raw_pdays,TimeSeriesSplit 5-fold (order-based; first 80% only),0.10758168794391118,0.09492676865353214,0.009383524277141298,0.548206006677863,0.09895833333333333,completed
+engineered_pdays,TimeSeriesSplit 5-fold (order-based; first 80% only),0.10887847713397143,0.09445222666343911,0.009075043630017451,0.5482812031248999,0.10201429499675113,completed

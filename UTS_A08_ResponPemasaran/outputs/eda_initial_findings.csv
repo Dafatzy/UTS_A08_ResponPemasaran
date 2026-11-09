@@ -1,0 +1,8 @@
+temuan,hasil_aktual,implikasi
+Distribusi target,"no=39922 (88.302%), yes=5289 (11.698%)",Gunakan metrik kelas positif serta baseline; interpretasi metrik mengikuti proporsi aktual.
+Sel kosong,0 sel NaN pada seluruh tabel,Tentukan kebutuhan imputasi berdasarkan kolom yang benar-benar memiliki NaN.
+Label unknown,poutcome=36959; contact=13020; education=1857; job=288,Unknown dibedakan dari NaN dan dievaluasi secara kontekstual.
+Kode pdays=-1,36954 baris (81.737%),Pisahkan status belum pernah dihubungi dari jumlah hari sejak kontak sebelumnya.
+Nilai pdays tidak valid (< -1 / nonnumerik),0 baris di bawah -1; 0 nilai nonnumerik,Periksa nilai di luar kode domain; jangan menyamakannya dengan kategori unknown atau lanjut modeling sebelum penyebabnya diketahui.
+Baris duplikat penuh,0 baris,Jangan hapus otomatis; evaluasi makna unit observasi terlebih dahulu.
+Screening potensi outlier (IQR),age=487; balance=4729; day=0; duration=3235; campaign=3064; pdays=49; previous=8257,Angka IQR adalah penanda awal; validasi konteks domain sebelum transformasi atau penghapusan dan jangan menghapus otomatis.

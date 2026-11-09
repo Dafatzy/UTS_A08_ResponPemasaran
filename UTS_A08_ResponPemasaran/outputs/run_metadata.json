@@ -1,0 +1,66 @@
+{
+  "dataset_name": "UCI Bank Marketing - bank-full.csv",
+  "dataset_id": 222,
+  "source_page": "https://archive.ics.uci.edu/dataset/222/bank+marketing",
+  "source_download_url": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+  "source_method": "user-provided bank-full.csv; SHA-256 matches a secondary public data-source card recording prior official HTTPS acquisition from UCI; the UCI ZIP archive itself was not retained in this run",
+  "source_zip_sha256": null,
+  "csv_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+  "actual_shape": [
+    45211,
+    17
+  ],
+  "expected_shape_for_selected_version": [
+    45211,
+    17
+  ],
+  "dataset_version_validation": "passed exact bank-full.csv row count and 17-column schema check",
+  "raw_columns": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome",
+    "y"
+  ],
+  "target_mapping": {
+    "no": 0,
+    "yes": 1
+  },
+  "excluded_features": [
+    "duration",
+    "campaign",
+    "day",
+    "month",
+    "contact"
+  ],
+  "exclusion_rationale": "duration/campaign/day/month/contact are excluded in the primary pre-contact scenario because their recorded values describe the current/realized campaign contact.",
+  "feature_engineering": "pdays -> previously_contacted (yes/no/unknown) + days_since_previous_contact",
+  "split_protocol": "ordered source rows: first 80% train, final 20% test; no shuffling",
+  "cv_protocol": "TimeSeriesSplit(n_splits=5) on first 80% only; order-based contiguous folds, equal time spacing unverified",
+  "seed_for_stochastic_estimators": 42,
+  "python_version": "3.13.5",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.3.5",
+  "scikit_learn_version": "1.8.0",
+  "generated_at_utc": "2026-11-03T04:29:06.098472+00:00",
+  "data_row_order_assumption": "UCI describes bank-full.csv as ordered by date; CSV has no full timestamp per row, so equal time spacing cannot be verified.",
+  "selection_rule": "Use training cross-validation Average Precision as the primary model-selection metric; never select/tune using test metrics.",
+  "source_verification": {
+    "status": "secondary_checksum_corroboration",
+    "secondary_record": "https://github.com/raederhans/ca6003-bankmarketing/blob/main/notes/data_card.md",
+    "secondary_recorded_sha256": "d1513ec63b385506f7cfce9f2c5caa9fe99e7ba4e8c3fa264b3aaf0f849ed32d",
+    "official_uci_archive_sha256_retained": false
+  }
+}
